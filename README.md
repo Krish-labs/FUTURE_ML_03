@@ -4,7 +4,7 @@
 
 This project implements a customer support chatbot using a hybrid architecture that combines machine learning-based intent classification with large language model (LLM) response generation.
 
-The system is designed to handle routine queries efficiently using a lightweight ML model, while delegating complex or ambiguous queries to an LLM.
+The system handles routine queries efficiently using a lightweight ML model and delegates complex or ambiguous queries to an LLM.
 
 ---
 
@@ -61,7 +61,7 @@ FUTURE_ML_03/
 ├── preprocess.py
 ├── train_classifier.py
 ├── data/
-│   └── sample_twcs.csv   # small sample (optional)
+│   └── sample_twcs.csv   # Sample dataset (full dataset not included)
 ├── models/
 │   └── intent_model.pkl
 └── requirements.txt
@@ -71,18 +71,14 @@ FUTURE_ML_03/
 
 ## Dataset
 
-This project uses the **Twitter Customer Support Dataset** from Kaggle.
+This project uses the **Twitter Customer Support dataset (Kaggle)**.
 
 Due to file size limitations, the full dataset is not included in this repository.
 
-Download it here:
+Download it from:
 https://www.kaggle.com/datasets/thoughtvector/customer-support-on-twitter
 
-After downloading, place the file in:
-
-```bash
-data/twcs.csv
-```
+(Optional) A smaller sample dataset can be included for demonstration purposes.
 
 ---
 
@@ -106,21 +102,27 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+Steps:
+
+1. Enter your API key in the sidebar
+2. Start interacting with the chatbot
+
 ---
 
 ## Limitations
 
 * Intent classification depends on training data and rule-based logic
-* No integration with real backend services (e.g., order APIs)
-* LLM responses require API key and internet access
+* The model may misclassify ambiguous queries
+* Requires an API key for LLM-based responses
+* No integration with real backend systems
 
 ---
 
 ## Future Improvements
 
 * Replace Logistic Regression with transformer-based models
-* Add real backend integrations (order tracking, refund APIs)
-* Improve dataset coverage for better intent accuracy
+* Expand dataset with more diverse examples
+* Integrate real backend services (order tracking, refunds)
 
 ---
 
