@@ -1,0 +1,7 @@
+google-generativeai
+joblib
+pandas
+psutil
+scikit-learn
+streamlit
+vaderSentiment
