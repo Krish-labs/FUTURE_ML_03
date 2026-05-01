@@ -61,10 +61,27 @@ FUTURE_ML_03/
 ├── preprocess.py
 ├── train_classifier.py
 ├── data/
-│   └── twcs.csv
+│   └── sample_twcs.csv   # small sample (optional)
 ├── models/
 │   └── intent_model.pkl
 └── requirements.txt
+```
+
+---
+
+## Dataset
+
+This project uses the **Twitter Customer Support Dataset** from Kaggle.
+
+Due to file size limitations, the full dataset is not included in this repository.
+
+Download it here:
+https://www.kaggle.com/datasets/thoughtvector/customer-support-on-twitter
+
+After downloading, place the file in:
+
+```bash
+data/twcs.csv
 ```
 
 ---
