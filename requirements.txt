@@ -1,7 +1,7 @@
-google-generativeai
-joblib
-pandas
-psutil
-scikit-learn
-streamlit
-vaderSentiment
+streamlit==1.35.0
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.4.2
+joblib==1.4.2
+google-generativeai==0.7.2
+vaderSentiment==3.3.2
